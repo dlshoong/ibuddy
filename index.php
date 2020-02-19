@@ -5,26 +5,22 @@ if (isset($_GET['email']) && $_GET['email']!="" && isset($_GET['brand']) && $_GE
         $brand =  strtolower($_GET['brand']); // Example: brand name or all
     
                 //if  found in thailand, otherwise check malaysia
-                if ($brand == 'RECORMON'){ // th is selected
+                if ($brand == strtolower('RECORMON')){ // th is selected
                    
                         echo "[{\"USERNAME\":\"rose.wongtapradit@roche.com\",\"CURRENT_YEAR\":\"2020\",\"PREVIOUS_YEAR\":\"2019\",\"CURRENT_CYCLE\":\"1\",\"CURRENT_QUARTER\":\"N\/A\",\"PREVIOUS_QUARTER\":\"N\/A\",\"CURRENT_MONTH\":\"2\",\"PREVIOUS_MONTH\":\"N\/A\",\"CURRENT_SALES_AREA\":\"GC\",\"BRAND\":\"RECORMON\",\"CYCLE_CURRENT_SALES\":\"4222302\",\"CYCLE_PREVIOUS_SALES\":\"6097410\",\"CYCLE_SALES_GROWTH\":\"-1875108\",\"CYCLE_GROWTH_PERCENTAGE\":\"-30.8%\",\"YTD_CURRENT_SALES\":\"4222302\",\"YTD_PREVIOUS_SALES\":\"6097410\",\"YTD_SALES_GROWTH\":\"-1875108\",\"YTD_GROWTH_PERCENTAGE\":\"-30.8%\",\"YOY_CURRENT_SALES\":\"1505760\",\"YOY_PREVIOUS_SALES\":\"2499540\",\"YOY_SALES_GROWTH\":\"-993780\",\"YOY_GROWTH_PERCENTAGE\":\"-39.8%\",\"QTD_PREVIOUS_YEAR_CURRENT_SALES\":\"0\",\"QTD_PREVIOUS_YEAR_PREVIOUS_SALES\":\"0\",\"QTD_PREVIOUS_YEAR_SALES_GROWTH\":\"0\",\"QTD_PREVIOUS_YEAR_GROWTH_PERCENTAGE\":\"0\",\"QTD_PREVIOUS_QUARTER_CURRENT_SALES\":\"0\",\"QTD_PREVIOUS_QUARTER_PREVIOUS_SALES\":\"0\",\"QTD_PREVIOUS_QUARTER_SALES_GROWTH\":\"0\",\"QTD_PREVIOUS_QUARTER_GROWTH_PERCENTAGE\":\"0\",\"MTD_CURRENT_SALES\":\"0\",\"MTD_PREVIOUS_SALES\":\"0\",\"MTD_SALES_GROWTH\":\"0\",\"MTD_GROWTH_PERCENTAGE\":\"0\",\"LAST_UPDATED_DATE\":\"feb-18-2020 00:00:00\",\"COUNTRY\":\"TH\",\"NAME\":\"Rose Wongtapradit\",\"TERRITORY_NAME\":\"GC\"}]";
      
 
-                }elseif ($brand == 'MIRCERA'){ 
+                }elseif ($brand == strtolower('MIRCERA')){ 
 
                         echo "[{\"USERNAME\":\"rose.wongtapradit@roche.com\",\"CURRENT_YEAR\":\"2020\",\"PREVIOUS_YEAR\":\"2019\",\"CURRENT_CYCLE\":\"1\",\"CURRENT_QUARTER\":\"N\/A\",\"PREVIOUS_QUARTER\":\"N\/A\",\"CURRENT_MONTH\":\"2\",\"PREVIOUS_MONTH\":\"N\/A\",\"CURRENT_SALES_AREA\":\"GC\",\"BRAND\":\"MIRCERA\",\"CYCLE_CURRENT_SALES\":\"1459280\",\"CYCLE_PREVIOUS_SALES\":\"1840140\",\"CYCLE_SALES_GROWTH\":\"-380860\",\"CYCLE_GROWTH_PERCENTAGE\":\"-20.7%\",\"YTD_CURRENT_SALES\":\"1459280\",\"YTD_PREVIOUS_SALES\":\"1840140\",\"YTD_SALES_GROWTH\":\"-380860\",\"YTD_GROWTH_PERCENTAGE\":\"-20.7%\",\"YOY_CURRENT_SALES\":\"430280\",\"YOY_PREVIOUS_SALES\":\"810230\",\"YOY_SALES_GROWTH\":\"-379950\",\"YOY_GROWTH_PERCENTAGE\":\"-46.9%\",\"QTD_PREVIOUS_YEAR_CURRENT_SALES\":\"0\",\"QTD_PREVIOUS_YEAR_PREVIOUS_SALES\":\"0\",\"QTD_PREVIOUS_YEAR_SALES_GROWTH\":\"0\",\"QTD_PREVIOUS_YEAR_GROWTH_PERCENTAGE\":\"0\",\"QTD_PREVIOUS_QUARTER_CURRENT_SALES\":\"0\",\"QTD_PREVIOUS_QUARTER_PREVIOUS_SALES\":\"0\",\"QTD_PREVIOUS_QUARTER_SALES_GROWTH\":\"0\",\"QTD_PREVIOUS_QUARTER_GROWTH_PERCENTAGE\":\"0\",\"MTD_CURRENT_SALES\":\"0\",\"MTD_PREVIOUS_SALES\":\"0\",\"MTD_SALES_GROWTH\":\"0\",\"MTD_GROWTH_PERCENTAGE\":\"0\",\"LAST_UPDATED_DATE\":\"feb-18-2020 00:00:00\",\"COUNTRY\":\"TH\",\"NAME\":\"Rose Wongtapradit\",\"TERRITORY_NAME\":\"GC\"}]";
 
-                }elseif ($brand == 'CELLCEPT'){ 
+                }elseif ($brand == strtolower('CELLCEPT')){ 
                    
                         echo "[{\"USERNAME\":\"rose.wongtapradit@roche.com\",\"CURRENT_YEAR\":\"2020\",\"PREVIOUS_YEAR\":\"2019\",\"CURRENT_CYCLE\":\"1\",\"CURRENT_QUARTER\":\"N\/A\",\"PREVIOUS_QUARTER\":\"N\/A\",\"CURRENT_MONTH\":\"2\",\"PREVIOUS_MONTH\":\"N\/A\",\"CURRENT_SALES_AREA\":\"GC\",\"BRAND\":\"CELLCEPT\",\"CYCLE_CURRENT_SALES\":\"2232050\",\"CYCLE_PREVIOUS_SALES\":\"1664641\",\"CYCLE_SALES_GROWTH\":\"567409\",\"CYCLE_GROWTH_PERCENTAGE\":\"34.1%\",\"YTD_CURRENT_SALES\":\"2232050\",\"YTD_PREVIOUS_SALES\":\"1664641\",\"YTD_SALES_GROWTH\":\"567409\",\"YTD_GROWTH_PERCENTAGE\":\"34.1%\",\"YOY_CURRENT_SALES\":\"657920\",\"YOY_PREVIOUS_SALES\":\"883314\",\"YOY_SALES_GROWTH\":\"-225394\",\"YOY_GROWTH_PERCENTAGE\":\"-25.5%\",\"QTD_PREVIOUS_YEAR_CURRENT_SALES\":\"0\",\"QTD_PREVIOUS_YEAR_PREVIOUS_SALES\":\"0\",\"QTD_PREVIOUS_YEAR_SALES_GROWTH\":\"0\",\"QTD_PREVIOUS_YEAR_GROWTH_PERCENTAGE\":\"0\",\"QTD_PREVIOUS_QUARTER_CURRENT_SALES\":\"0\",\"QTD_PREVIOUS_QUARTER_PREVIOUS_SALES\":\"0\",\"QTD_PREVIOUS_QUARTER_SALES_GROWTH\":\"0\",\"QTD_PREVIOUS_QUARTER_GROWTH_PERCENTAGE\":\"0\",\"MTD_CURRENT_SALES\":\"0\",\"MTD_PREVIOUS_SALES\":\"0\",\"MTD_SALES_GROWTH\":\"0\",\"MTD_GROWTH_PERCENTAGE\":\"0\",\"LAST_UPDATED_DATE\":\"feb-18-2020 00:00:00\",\"COUNTRY\":\"TH\",\"NAME\":\"Rose Wongtapradit\",\"TERRITORY_NAME\":\"GC\"}]";
 
                 }else{
                     echo "Invalid Input";
                  }
-
-        else{
-         echo "Invalid Request";
-        } 
  
 }
 ?>
